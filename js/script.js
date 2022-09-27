@@ -20,61 +20,57 @@ function rollTheDice() {
 	} ,1500);
  }
 
-  function playGame() {
+function playGame() {
     	if (num > 0) {
 		$("#image").remove();
 		sum += current;
-	if(sum==36){
-		sum=8;
-		play();
-	}
-	else if(sum==30){
-		sum=12;
-		play();
-	}
-	else if(sum==86){
-		sum=57;
-		play();
-	}
-	else if(sum==70){
-		sum=50;
-		play();
-	}
-	else if(sum==99){
-		sum=42;
-		play();
-	}
-	else if(sum==4){
-		sum=39;
-		play();
-	}
-	else if(sum==26){
-		sum=75;
-		play();
-	}
-	else if(sum==33){
-		sum=52;
-		play();
-	}
-	else if(sum==59){
-		sum=63;
-		play();
-	}
-	else if(sum==73){
-		sum=93;
-		play();
-	}
+		if(sum==36){
+			sum=8;
+			play();
+		}
+		else if(sum==30){
+			sum=12;
+			play();
+		}
+		else if(sum==86){
+			sum=57;
+			play();
+		}
+		else if(sum==70){
+			sum=50;
+			play();
+		}
+		else if(sum==99){
+			sum=42;
+			play();
+		}
+		else if(sum==4){
+			sum=39;
+			play();
+		}
+		else if(sum==26){
+			sum=75;
+			play();
+		}
+		else if(sum==33){
+			sum=52;
+			play();
+		}
+		else if(sum==59){
+			sum=63;
+			play();
+		}
+		else if(sum==73){
+			sum=93;
+			play();
+		}
 
-	else{
-		play();
-	}
-	function play(){
-    		
-    		
-    		$('#' + sum + "").append('<img id="image" src="assets/giphy.gif">');
-    		console.log(sum);
-		
-
-	}
-    }
+		else{
+			play();
+		}
+		function play(){
+    			$('#' + sum + "").append('<img id="image" src="assets/giphy.gif">');
+    			console.log(sum);
+		}
+   	 }
 }
