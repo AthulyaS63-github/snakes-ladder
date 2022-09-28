@@ -46,6 +46,8 @@ h1
 	border: none;
 }
 #image{
-	width:40px;
+	width:100%;
 }
-
+#image2{
+	width:68%;
+}
