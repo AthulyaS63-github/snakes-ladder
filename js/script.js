@@ -1,15 +1,9 @@
-    //  name
-    var player1 = "Player 1";
     var sum=0; 
     var sum2 = 0;
     var num=1;
     var current=0;
     var p = 0;
     var n = 0;
-    function editNames() {
-        player1 = prompt("Change Player1 name");
-        document.querySelector("p.Player1").innerHTML = player1;
-    }
   // Function to roll the dice
 function rollTheDice() {
              document.querySelector(".img1").setAttribute("src","assets/face0.gif");
@@ -80,12 +74,18 @@ function rollTheDice() {
     			sum -= current;
     			play();
 		}
+		else if (sum == 100) {
+    			setTimeout(() => {
+                  alert("player1 is winner !!");
+                  window.location.reload();
+              }, 800);
+			
+			
+    		}
 		else{
 			play();
 		}
-		if (sum == 100) {
-    			alert("player1 win")
-    		}
+		
 	}
 	function player2() {
     	
@@ -135,12 +135,18 @@ function rollTheDice() {
     			sum -= current;
     			play();
 		}
+		else if (sum2 == 100) {
+    			
+              		setTimeout(() => {
+                  	alert("player2 is winner !!");
+                  	window.location.reload();
+              }, 800);
+			
+    		}
 		else{
 			play2();
 		}
-		if (sum2 == 100) {
-    			alert("player2 win")
-    		}
+		
 	}
 
 	function play(){

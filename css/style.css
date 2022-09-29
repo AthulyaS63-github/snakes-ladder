@@ -35,15 +35,17 @@ h1
 .container {
 	margin-left:20px;
 	
+	
 }
 .dice {
 	text-align: center;
 	display: inline-block;
-	margin: 10px;
+	
 }
 .butn {
 	background-color: transparent;
 	border: none;
+	clear:left;
 }
 #image{
 	width:100%;
